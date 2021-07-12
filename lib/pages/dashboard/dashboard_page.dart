@@ -13,7 +13,6 @@ class DashboardPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetBuilder<DashBoardController>(
       builder: (controller) {
-        print("deneme2");
         return Scaffold(
           bottomNavigationBar: ConvexAppBar(
             backgroundColor: Colors.blue.shade400,
@@ -48,5 +47,7 @@ class DashboardBinding extends Bindings {
   void dependencies() {
     Get.lazyPut<DashBoardController>(() => DashBoardController());
     Get.lazyPut<HomeController>(() => HomeController());
+    Get.lazyPut<NewsController>(() => NewsController());
+    Get.lazyPut<AlertsController>(() => AlertsController());
   }
 }

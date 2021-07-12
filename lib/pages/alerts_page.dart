@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 class AlertsPage extends GetView<AlertsController> {
   @override
   Widget build(BuildContext context) {
+    print("AlertsPage");
     return Scaffold(
       body: Container(
         child: Center(

@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 class NewsPage extends GetView<NewsController> {
   @override
   Widget build(BuildContext context) {
+    print("NewsPage");
     return Scaffold(
       body: Container(
         child: Center(

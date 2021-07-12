@@ -2,8 +2,8 @@ import 'package:get/get.dart';
 
 class DashBoardController extends GetxController {
   var tabIndex = Get.arguments;
-
-  void changeTabIndex(int index) {
+  int index;
+  void changeTabIndex(index) {
     tabIndex = index;
     update();
   }
